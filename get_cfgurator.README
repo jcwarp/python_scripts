@@ -1,0 +1,12 @@
+# Steps to prepare for running get_cfgurator
+# Update package libraries
+python3 -m pip install --upgrade pip
+python3 -m pip install pymongo
+#python3 -m pip install pyyaml
+python3 -m pip install ruamel.yaml
+
+# Connect to mongo server
+# tunnel port to mongo
+# example (change server as needed):
+ssh -L27017:localhost:27017 dm-stg-east1-host-mongo-1
+
